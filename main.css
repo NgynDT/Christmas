@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #bddaff;
+}
+.container{
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.shapes {
+    height: 270px;
+    width: 270px;
+    background:linear-gradient(45deg, #b507a7, #fa80f0);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+.shapes:before {
+    content: "";
+    position: absolute;
+    height: 270px;
+    width: 270px;
+    top: 147px;
+    background: linear-gradient(45deg, #0756b5, #80affa);
+    border-radius: 50%;
+    right: 374px;
+}
+.card{
+    position: absolute;
+    height: 300px;
+    width: 550px;
+    background-color: rgba(255, 255,255,0.15);
+    border: 2px solid rgba(255, 255,255,0.2);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.08);
+    cursor: grabbing;
+    overflow: hidden;
+
+}
+.card img {
+    position: absolute;
+    width: 200px;
+    filter: drop-shadow(0 0 20px rgba(26, 0, 68,0.34));
+    bottom: 0;
+    left: 170px;
+    transition: 0.5s;
+}
+.text-container{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    width: 250px;
+    right: -250px;
+    transition: 0.5s;
+   
+    
+}
+.card h2{
+    color: #1f0b50;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card p {
+    font-weight: 300;
+    text-align: justify;
+    color: #261844;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    
+}
+.card:hover img {
+    width: 165px;
+    left: 70px;
+    bottom: 35px;
+}
+.card:hover .text-container {
+    right: 15px;
+
+}
+
+/* contact */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* .wrapper1{
+    position:relative;
+   text-align: right;
+} */
+.wrapper1 .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: flex;
+    overflow: hidden;
+    margin: 0 5px 0 20px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out ;
+    text-decoration: none;
+    /* margin-left: -200px; */
+    
+}
+.wrapper1 .button:hover {
+    width: 280px;
+}
+.wrapper1 .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+.wrapper1 .button:nth-child(1):hover .icon{
+    background: #106ee0;
+}
+.wrapper1 .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper1 .button:hover .icon i{
+    color: #fff;
+}
+.wrapper1 .button .contact{
+font-size: 17px;
+font-weight: 600;
+margin-left: 10px;
+text-decoration: none;
+color: black;
+justify-content: center;
+}
+.link{
+    text-decoration: none;
+    text-align: center;
+}
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
